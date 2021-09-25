@@ -1,3 +1,13 @@
+terraform {
+  backend "remote" {
+    organization = "mariam-demo"
+
+    workspaces {
+      name = "mariam-demo"
+    }
+  }
+}
+
 provider "aws" {
     region = "us-east-1"
 }
