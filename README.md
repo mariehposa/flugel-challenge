@@ -1,9 +1,12 @@
 # Flugel-challenge
 
-A Terraform code to create an AWS EC2 instance and S3 bucket, test with Terratest to check if  both resources are tagged properly.
+A Terraform project to create an AWS EC2 instance and S3 bucket, tested with Terratest to check that both resources are tagged properly.
 
-* Github Actions
-![image](https://a29f-11eb-9479-1f477e131f9a.png)
+* Github Actions after creating a pull request
+![image](https://user-images.githubusercontent.com/33374159/134812944-a718145f-c8bf-4382-ac85-5944d7e94c24.png)
+
+* Github Actions after Merging to **main** branch
+![image](https://user-images.githubusercontent.com/33374159/134813134-de0afa61-1514-40c3-9e26-eab69f72c1c2.png)
 
 ## Getting Started
 
@@ -22,9 +25,9 @@ Go
 
 ## Testing with Terratest
 
-* Clone the repository, in the project directory, `cd` into `flugel-challenge/test`.
+* Clone the repository, open up the project directory and `cd` into `flugel-challenge/test`.
 * Then run `go mod init github.com/<github-username>/<github-repo-name>`.
-* Now you can run the test with `go test -count=1 -v ./...`. `-count=1` is used to avoid Go test caching and `-v` stands for verbose.
+* Now you can run the test with `go test -count=1 -v ./...`. The `-count=1` flag is used to avoid Go test caching and `-v` stands for verbose.
 * At the end of the test run, your test should pass and you should see something similar to the image below.
 
 ![flugel-test](https://user-images.githubusercontent.com/33374159/134811887-24cda8bf-f28c-4f23-9c13-8c10d407cc6c.png)
