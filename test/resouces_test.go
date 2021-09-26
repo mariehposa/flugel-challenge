@@ -21,7 +21,7 @@ func TestResources(t *testing.T) {
 	expectedBucket := "buc955815154140"
 
 	terraformOptions := &terraform.Options{
-		TerraformDir: "../terraform/",
+		TerraformDir: "../",
 	}
 
 	// Destroy the infrastructure after testing.
