@@ -12,10 +12,10 @@ terraform {
   required_version = ">= 0.14"
 
   backend "remote" {
-    organization = "mariam-demo"
+    organization = "flugel-challenge"
 
     workspaces {
-      name = "mariam-demo"
+      name = "flugel-challenge"
     }
   }
 }
