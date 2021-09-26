@@ -5,10 +5,10 @@ on:
     branches:
       - main
     paths:
-      - 'terraform/**.tf'
+      - '**.tf'
   pull_request:
     paths:
-      - 'terraform/**.tf'
+      - '**.tf'
 
 jobs:
   terraform:
